@@ -24,7 +24,7 @@
         }
     }
 
-    const pessoa1 = criaPessoa("Luiz", "Guilherme Barbieri", 1.85, 72);
+    const pessoa1 = criaPessoa("Luiz", "Guilherme Barbieri", 1.85, 75);
     
     console.log(pessoa1.fala());
     console.log(pessoa1.nomeCompleto);
