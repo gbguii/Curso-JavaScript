@@ -1,0 +1,29 @@
+*{
+    font-size: 62.5%; /* 62.5% corresponde a 10px*/
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+a{
+    font-size: 1.8rem;
+}
+.pai{
+    /* width: 30rem;   Utiliza assim para se conseguir 300px
+    background-color: aqua; */
+    background-color: darkblue;
+    height: 100vh;
+    width: 50rem;
+}
+.bloco{
+    width: 50%;
+    background-color: aquamarine;
+}
+.color-two{
+    background-color: aqua;
+}
+.color-three{
+    background-color: darkgoldenrod;
+}
+p{
+    font-size: 1.6rem;
+}
