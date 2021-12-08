@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+.two-colums{
+    display: flex;
+}
+.two-colums .col{
+    display: flex;
+    flex-direction: column;
+    background-color: greenyellow;
+    margin: 15px;
+    padding: 30px;
+}
+p{
+    margin-bottom: 20px;
+}
+.galery{
+    display: flex;
+    flex-flow: row wrap;
+}
+.galery .img{
+    flex: 1 0 23.23%;
+    height: 50px;
+    background-color: gray;
+    margin: 10px;
+}

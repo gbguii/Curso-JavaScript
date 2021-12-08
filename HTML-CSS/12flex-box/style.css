@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    background-color: yellow;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.flex-item{
+    background-color: red;
+    flex-grow: 1;
+    flex-basis: 320px;
+    flex-shrink: 1;
+    height: 200px;
+    margin: 2px;
+}
+.flex-item:nth-child(1){
+    flex-basis: 1200px;
+}
