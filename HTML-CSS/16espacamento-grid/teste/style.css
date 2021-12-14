@@ -27,5 +27,25 @@
 
 .container{
     max-width: 1200px;
-    margin
+    height: 60vh;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    background-color: white;
+    height: 100%;
+    margin-right: -20px;
+}
+
+.img, .conteudo{
+    background-color: rgba(0, 0, 0, 0.253);
+    margin: 10px 10px;
+    
+    display: flex;
+    align-items: center;
 }
