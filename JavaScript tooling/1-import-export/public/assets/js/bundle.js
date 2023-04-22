@@ -10,11 +10,11 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Pessoa": () => (/* binding */ Pessoa),
+/* harmony export */   "anoNascimento": () => (/* binding */ anoNascimento),
+/* harmony export */   "default": () => (/* binding */ Pessoa),
 /* harmony export */   "idade": () => (/* binding */ idade),
 /* harmony export */   "nome": () => (/* binding */ nome),
-/* harmony export */   "sobrenome": () => (/* binding */ sobrenome),
-/* harmony export */   "soma": () => (/* binding */ soma)
+/* harmony export */   "sobrenome": () => (/* binding */ sobrenome)
 /* harmony export */ });
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
@@ -25,14 +25,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var nome = 'Luiz';
 var sobrenome = 'Barbieri';
 var idade = '24';
-function soma(x, y) {
-  return x + y;
+function anoNascimento(idade) {
+  debugger;
+  var dataAtaul = new Date();
+  return dataAtaul.getFullYear() - idade;
 }
 var Pessoa = /*#__PURE__*/_createClass(function Pessoa(nome, sobrenome) {
   _classCallCheck(this, Pessoa);
   this.nome = nome;
   this.sobrenome = sobrenome;
 });
+
 
 /***/ })
 
@@ -100,8 +103,12 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modulo1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modulo1 */ "./src/modulo1.js");
+// Importando o default
 
-var pessoa1 = new _modulo1__WEBPACK_IMPORTED_MODULE_0__.Pessoa("Luiz", "Barbieri");
+// Importando pelo nome correspondente
+
+console.log(_modulo1__WEBPACK_IMPORTED_MODULE_0__.nome, _modulo1__WEBPACK_IMPORTED_MODULE_0__.sobrenome, _modulo1__WEBPACK_IMPORTED_MODULE_0__.idade, (0,_modulo1__WEBPACK_IMPORTED_MODULE_0__.anoNascimento)(_modulo1__WEBPACK_IMPORTED_MODULE_0__.idade));
+var pessoa1 = new _modulo1__WEBPACK_IMPORTED_MODULE_0__["default"]("Luiz", "Barbieri");
 console.log(pessoa1);
 })();
 
