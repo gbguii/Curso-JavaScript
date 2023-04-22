@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":";;;;;AAAAA,KAAK,CAAC,WAAW,CAAC;AAClBC,OAAO,CAACC,GAAG,CAAC,WAAW,CAAC,C","sources":["webpack://webpack/./src/index.js"],"sourcesContent":["alert(\"Olá Mundo\");\r\nconsole.log(\"Olá Mundo\");"],"names":["alert","console","log"],"sourceRoot":""}
